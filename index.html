@@ -8,9 +8,9 @@ title: Hello World!
   <title>{{page.title}}</title>
 </head>
 <body>
-  {% for js in site %}
+  {% for js in site.static_files %}
     <li>
-      <a href="{{ js.url }}">{{ js.url }}</a>
+      <a href="{{ js.path }}">{{ js.path }}</a>
     </li>
   {% endfor %}
 </body>
