@@ -10,7 +10,7 @@ title: Hello World!
 <body>
   {% for js in site.static_files %}
     <li>
-      <a href="{{ js.path }}">{{ js.path }}</a>
+      <a href="{{site.url}}{{js.path}}">{{site.baseurl}}{{js.path}}</a>
     </li>
   {% endfor %}
 </body>
