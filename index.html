@@ -5,9 +5,13 @@ title: Hello World!
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>{{page.title}}</title>
 </head>
 <body>
-  {{ site.url }}
+  {% for js in site %}
+    <li>
+      <a href="{{ js.url }}">{{ js.url }}</a>
+    </li>
+  {% endfor %}
 </body>
 </html>
